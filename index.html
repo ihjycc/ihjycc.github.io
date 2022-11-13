@@ -1,15 +1,52 @@
-<html>
-    <head>
-        <title>
-            黄甲岩的学习日志
-        </title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>黄甲岩的学习日志</title>
 
-    </head>
-        
 
-    <body>
-        <font color ="red">学习日志</font><br>
-        <font color ="blue">乾坤未定，你我皆是黑马</font><br>
-        <font color ="yellow">2022/11/13</font><br>
-    </body>
+
+  <style>
+    div{
+      color: crimson;
+    }
+
+  </style>
+  <style>
+    p{
+      color: cyan;
+    }
+  </style>
+</head>
+<body style="background-color: #555555">
+
+<div><h1>黄甲岩的学习日志</h1></div>
+    <!--//<span style="color: red; ">学习日志</span><br>-->
+    <span style="color: blue; ">乾坤未定，你我皆是黑马</span><br>
+    <span style="color: yellow; ">2022/11/13</span><br>
+<br>
+<hr style="border-color: #37c610">
+<br>
+<h2><p>JavaScript 案例 2022/11/13</p></h2>
+<input type="button" onclick="on()" value="开灯">
+<img id="myImage" src="img/off.gif" style="text-align:center;">
+<input type="button" onclick="off()" value="关灯">
+<br>
+<br>
+<br>
+<hr style="border-color: #37c610">
+
+</body>
+<script>
+  function on(){
+    document.getElementById('myImage').src='img/on.gif';
+  }
+
+  function off(){
+    document.getElementById('myImage').src='img/off.gif'
+  }
+  alert("欢迎你朋友\nWelcome my friends")
+
+</script>
+
 </html>
