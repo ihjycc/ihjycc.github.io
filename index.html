@@ -16,10 +16,10 @@
 </head>
 <body style="background-color: #555555">
 <div><h1>黄甲岩的学习日志</h1></div>
-    <!--//<span style="color: red; ">学习日志</span><br>-->
-    <span style="color: blue; ">乾坤未定，你我皆是黑马</span><br>
+<!--//<span style="color: red; ">学习日志</span><br>-->
+<span style="color: blue; ">乾坤未定，你我皆是黑马</span><br>
 <br>
-    <span style="color: yellow; ">2022/11/13</span><br>
+<span style="color: yellow; ">2022/11/13</span><br>
 <br>
 <hr style="border-color: #37c610">
 <br>
@@ -35,10 +35,11 @@
 <h2><p>2022/11/14</p></h2>
 <div class="form-div">
   <div class="reg-content">
-    <h1>欢迎注册</h1>
+    <h1>欢迎注册（已废弃）  <a href="/web-demo1/src/main/webapp/login.html">注册</a></h1>
     <span>已有帐号？</span> <a href="www">登录</a>
   </div>
-<br>
+
+  <br>
   <form id="reg-form" action="#" method="get">
 
     <table>
@@ -93,17 +94,17 @@
     document.getElementById('myImage').src='img/off.gif'
   }
   alert("欢迎你朋友\nWelcome my friends\n这里是一个记录学习" +
-    "的网站\nThis is a website for recording learning")
+          "的网站\nThis is a website for recording learning")
 
   var usernameInput = document.getElementById("username");
 
   usernameInput.onblur=checkUsername;
 
-    function checkUsername(){
+  function checkUsername(){
     var username = usernameInput.value.trim();
     //alert(username)
-      var reg=/^\w{6,12}$/
-      var flag=reg.test(username)
+    var reg=/^\w{6,12}$/
+    var flag=reg.test(username)
     //var flag= username.length>=6&&username.length<=12
     if (flag){
       document.getElementById("username_err").style.display='none';
@@ -115,11 +116,11 @@
   var passwordInput = document.getElementById("password");
 
   passwordInput.onblur=checkPassword
-    function checkPassword (){
+  function checkPassword (){
     var password = passwordInput.value.trim();
     //alert(password)
-      var reg=/^\w{6,12}$/
-      var flag=reg.test(password)
+    var reg=/^\w{6,12}$/
+    var flag=reg.test(password)
     //  var flag=password.length>=6&&password.length<=12
     if (flag){
       document.getElementById("password_err").style.display='none';
@@ -132,12 +133,12 @@
   var telInput = document.getElementById("tel");
 
   telInput.onblur=checkTel
-    function checkTel(){
+  function checkTel(){
     var tel = telInput.value.trim();
     //alert(tel)
-     // var flag=tel.length>1==11
-      var reg=/^[1]\d{10}$/
-      var flag=reg.test(tel)
+    // var flag=tel.length>1==11
+    var reg=/^[1]\d{10}$/
+    var flag=reg.test(tel)
     if (flag){
       document.getElementById("tel_err").style.display='none';
     }else {
